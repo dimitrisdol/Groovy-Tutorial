@@ -7,10 +7,11 @@ import groovy.transform.TupleConstructor
 //@EqualsAndHashCode
 //@TupleConstructor
 @Canonical
-class Person implements Serializable{
+class Person implements Serializable {
     String firstName
     String lastName
     int age
+
     String getFullName() {
         firstName + " " + lastName
     }
